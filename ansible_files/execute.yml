@@ -1,0 +1,10 @@
+---
+
+- name: execute a raw command to change interface name
+  hosts: eos
+  gather_facts: no
+  tasks:
+  - raw: "show ip int brief"
+  - debug: var=vars
+#    register: out 
+#  - debug: var=out.stdout_lines

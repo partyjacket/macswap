@@ -1,0 +1,7 @@
+interfaces:
+  - name: Ethernet1
+    description: '[BGP]Spine1'
+    address: 10.1.1.1/31
+  - name: Ethernet2
+    description: '[BGP]Spine2'
+    address: 10.1.2.1/31

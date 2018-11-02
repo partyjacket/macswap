@@ -1,0 +1,7 @@
+
+{% for n in range(10) %}
+interface ethernet {{n+1}}
+ description {{ interface.description}} 
+ switchport access vlan {{ interface.vlan }}
+ switchport mode access
+ {% endfor %}

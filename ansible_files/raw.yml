@@ -1,0 +1,17 @@
+---
+- name: do a show arp on eos
+  hosts: eos
+  gather_facts: no
+  tasks:
+  - raw: "show arp"
+    register: out
+  - debug: var=out.stdout_lines
+
+- name: do a show ip interfaces on eos
+  hosts: eos
+  gather_facts: no
+  tasks:
+  - raw: "show ip interface brief"
+    register: showme
+  - debug: var=showme.stdout_lines
+

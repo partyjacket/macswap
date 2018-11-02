@@ -1,0 +1,14 @@
+---
+- name: show version test
+  hosts: eos
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: showver
+      eos_command:
+        commands: 
+        - show version
+        - show int status
+      register: out
+    - debug: var=out.stdout_lines

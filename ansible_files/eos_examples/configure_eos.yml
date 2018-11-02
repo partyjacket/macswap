@@ -1,0 +1,10 @@
+---
+- hosts: pod1_leafs
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: configure vlans
+    eos_config:
+      src: vlans.j2
+      provider: "{{ eos_connection }}"

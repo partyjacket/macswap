@@ -1,0 +1,22 @@
+---
+- name: show version test
+  hosts: test
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: showver
+      eos_command:
+        commands: 
+        - show version
+        - show interface status
+        provider: 
+          username: admin
+          password: admin
+          host: "{{ inventory_hostname }}"
+          transport: cli
+          use_ssl: no
+          authorize: yes
+          validate_certs: no
+      register: out
+    - debug: var=out.stdout_lines

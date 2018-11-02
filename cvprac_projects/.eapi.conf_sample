@@ -1,0 +1,17 @@
+[connection:veos1]
+host: 192.168.56.101
+username: admin
+password: admin
+transport: http
+
+[connection:veos2]
+host: 192.168.56.102
+username: admin
+password: admin
+transport: http
+
+[connection:test]
+host: 192.168.10.1
+username: admin
+password: admin
+transport: http
