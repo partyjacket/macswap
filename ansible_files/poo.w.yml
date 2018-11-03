@@ -9,12 +9,12 @@
       eos_command:
         commands: 
         - show version
-        - show interface status
+        - show interfaces status
         provider: 
           username: admin
           password: admin
           host: "{{ inventory_hostname }}"
-          transport: cli
+          transport: http
           use_ssl: no
           authorize: yes
           validate_certs: no

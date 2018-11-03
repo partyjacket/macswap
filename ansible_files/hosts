@@ -16,7 +16,7 @@ r3 ansible_host=192.168.10.1
 
 # Ex 1: Ungrouped hosts, specify before any group headers.
 [test]
-192.168.56.101
+192.168.10.1
 
 [eos:children]
 peos
