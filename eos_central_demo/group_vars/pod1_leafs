@@ -1,5 +1,0 @@
-vlans:
- - vlanid: 299
-   name: production
- - vlanid: 39
-   name: app
