@@ -27,3 +27,5 @@ def format_ordinal():
         print("You have to pick a number jackass!")
         return format_ordinal()
 
+format_ordinal()
+

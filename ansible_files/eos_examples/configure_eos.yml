@@ -1,5 +1,5 @@
 ---
-- hosts: pod1_leafs
+- hosts: border_router
   connection: local
   gather_facts: no
 
