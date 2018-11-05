@@ -2,8 +2,8 @@
 
 from jinja2 import Environment, FileSystemLoader
 
-ENV = Environment(loader=FileSystemLoader("/media/sf_vboxshare/jinja"))
-#ENV = Environment(loader=FileSystemLoader("/Users/jpatterson/Documents/#Arista/vboxshare/jinja"))
+#ENV = Environment(loader=FileSystemLoader("/media/sf_vboxshare/jinja_files"))
+ENV = Environment(loader=FileSystemLoader("//Users/jpatterson/Documents/#Arista/vboxshare/macswap/automation_book/basic_python-jinja/jinja_files"))
 
 template1 = ENV.get_template('template1.j2')
 
