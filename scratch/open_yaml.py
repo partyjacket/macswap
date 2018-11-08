@@ -26,5 +26,10 @@ with open('newfile') as f:
 	print len(test)
 	print type(test)
 
-sys.exit('jo mamas script just made an exit, it is finished')
+# sys.exit('jo mamas script just made an exit, it is finished')
+
+list1 = ['1', '2,', '3']
+
+val1, val2, val3 = list1
+print val2
 
