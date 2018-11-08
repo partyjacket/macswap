@@ -3,6 +3,7 @@
 import yaml
 import sys
 from pprint import pprint as pp
+import time
 
 with open('../ansible_files/hosts') as f:
 	read_f = f.read()
@@ -21,6 +22,7 @@ with open('newfile') as f:
 
 with open('newfile') as f:
 	test = f.readlines()
+	time.sleep(5)
 	print len(test)
 	print type(test)
 
