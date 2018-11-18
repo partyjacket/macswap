@@ -8,11 +8,15 @@
 mydict = dict()
 def myiteritems(**kwargs):
     for a, b in kwargs.iteritems():
-        mydict[a]=b
+        mydict[a] = b
 
 
 
 myiteritems(jason = 3)
+
+print mydict
+
+mydict['test'] = 'nutz'
 
 print mydict
 

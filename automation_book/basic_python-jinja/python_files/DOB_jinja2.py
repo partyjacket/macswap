@@ -18,7 +18,7 @@ class NetworkInterface(object):
 
 interface_obj = NetworkInterface("Ethernet50", "This is my interface", "100")
 
-print template1.render(interface=interface_obj)
+print(template1.render(interface=interface_obj))
 
 
 

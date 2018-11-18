@@ -6,13 +6,20 @@ import requests
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)  # This will disable invalid cert warnings
 
 
-clnt = CvpClient()
-
-clnt.connect(['cvp.lab.local'], 'jpatterson', 'P3pp3r101!')
-
-result = clnt.get('/cvpInfo/getCvpInfo.do')
-
-test1 = clnt.get('/cvpservice/snapshot/getSnapshots.do?startIndex=0&endIndex=0')
+client = CvpClient()
+api = CvpApi(client)
 
 
-pprint(result)
+client.connect(['cvp.lab.local'], 'cvpadmin', 'pepper101')
+
+
+result = client.get('/cvpInfo/getCvpInfo.do')
+
+newresult = client.get('https://cvp.lab.local/cvpservice/image/getImages.do?startIndex=0&endIndex=0')
+
+print newresult
+
+
+# test1 = clnt.get('/cvpservice/snapshot/getSnapshots.do?startIndex=0&endIndex=0')
+
+print result

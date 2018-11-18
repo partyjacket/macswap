@@ -11,7 +11,7 @@ password: admin
 transport: http
 
 [connection:test]
-host: 192.168.10.1
+host: 192.168.11.11
 username: admin
 password: admin
 transport: http

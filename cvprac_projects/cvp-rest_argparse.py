@@ -17,7 +17,7 @@ cvp_host = ''
 
 parser.add_argument('-u', '--user', action='store', dest='cvp_user', default='jpatterson')
 parser.add_argument('-p', '--password', action='store', dest='cvp_pass', default='P3pp3r101!')
-parser.add_argument('-n', '--node', action='store', dest='cvp_host', default='192.168.10.101')
+parser.add_argument('-n', '--node', action='store', dest='cvp_host', default='192.168.10.100')
 
 result = parser.parse_args()
 
