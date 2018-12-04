@@ -3,9 +3,12 @@ from pprint import pprint as pp
 from arista_nest_helper import myhelper
 
 
-host = '192.168.10.100'
+host = '192.168.10.200'
 server = cvp.Cvp(host)
-server.authenticate('jpatterson', 'P3pp3r101!')
+
+server.authenticate('admin', 'admin')
+
+
 
 #This is a function to find all devices within cvp
 
