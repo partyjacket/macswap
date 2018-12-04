@@ -33,13 +33,13 @@ cvp = CvpApi(client)
 #
 # for name in host_list:
 #     print name
-
-def finditem(filter=''):
-    inventory = cvp.get_inventory(query=filter)
-    pprint(inventory[0]['fqdn'])
-
-
-finditem('192.168.10.1')
+#
+# def finditem(filter=''):
+#     inventory = cvp.get_inventory(query=filter)
+#     pprint(inventory[0]['fqdn'])
+#
+#
+# finditem('192.168.10.1')
 
 
 
@@ -53,9 +53,9 @@ finditem('192.168.10.1')
 # ip_to_host()
 
 '''Must save funtion output (dictionary) into variable before typical .items, keys, value methods can be invoked'''
-# mydict = cvp.get_containers()
-# for item in mydict['data']:
-#     print item['name'], item['key']
+mydict = cvp.get_containers()
+for item in mydict['data']:
+    print item['name'], item['key']
 
 '''adding a device to CVP and saving the state once done:'''
 # add_dev = cvp.add_device_to_inventory('192.168.11.12', 'SL-DC', 'container_17_609729386866')

@@ -1,6 +1,5 @@
 from jsonrpclib import Server
 from pprint import pprint as pp
-from arista_nest_helper import helper
 
 # user = 'jpatterson'
 # passwd = 'P3pp3r101!'
@@ -35,6 +34,7 @@ def lldp_neighbors(mac):
         result = switch.runCmds(1, ['enable', 'show lldp neighbors'])[1]['lldpNeighbors'][:]
         for value in result:
             neighbor_value = value['neighborDevice']
+            print value['neighborDevice']
             if mac in neighbor_value:
                 return ("Yes, I've found the damn mac!")
 

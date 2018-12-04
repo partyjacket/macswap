@@ -10,11 +10,12 @@ def is_prime(num):
 
 mylist = list()
 
-def get_number(nums):
+def get_primes_list(nums):
     for value in range(nums):
         if is_prime(value):
             mylist.append(value)
     mylist_len = len(mylist)
+    print 'number of primes in list is:', mylist_len
     return mylist_len
 
 
@@ -27,11 +28,11 @@ def get_primes(nums):
 
 thenum = int(raw_input("Please give me a number!"))
 
-prime_nums = get_number(thenum)
+number_of_primes = get_primes_list(thenum)
 
 prime = get_primes(thenum)
 
-for i in range(prime_nums):
+for i in range(number_of_primes):
     print next(prime)
 
 
