@@ -40,16 +40,8 @@ metadata = [("username", 'admin'), ("password", 'admin')]
 
 host = grpc.insecure_channel('192.168.10.1:6042')
 stub = pyopenconfig.openconfig_pb2.OpenConfigStub(host)
-path = '/Smash/routing/status/_counts'
+path = '/Smash/routing/status/'
 
 
-test = set(get(stub, path , metadata))
 
-test_jason = json.dumps(test)
-
-with open('new.txt', 'w') as f:
-    f.write(test_jason)
-
-with open('new.txt') as f:
-    pp(f.readline())
-
+print(get(stub, path, metadata))
