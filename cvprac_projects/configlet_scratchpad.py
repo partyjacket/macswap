@@ -1,5 +1,4 @@
 import sys
-from arista_nest_helper import helper
 from jsonrpclib import Server
 from pprint import pprint as pp
 

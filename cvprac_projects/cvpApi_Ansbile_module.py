@@ -2,9 +2,9 @@ import cvp
 from pprint import pprint
 
 
-host = '192.168.10.100'
+host = '192.168.10.200'
 server = cvp.Cvp(host)
-server.authenticate('jpatterson','P3pp3r101!')
+server.authenticate('admin', 'admin')
 
 #This is a function to find all devices within cvp
 

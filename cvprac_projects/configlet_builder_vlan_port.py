@@ -1,5 +1,4 @@
 import sys
-from arista_nest_helper import helper
 from jsonrpclib import Server
 from pprint import pprint as pp
 from join_numbers import join_ports
@@ -18,10 +17,12 @@ url = "http://%s:%s@%s/command-api" % (user, passwd, ip)
 switch = Server(url)
 
 
-vlans_proposed = '201'
+vlans_proposed = 'sci_major'
 ports_proposed = ['9', ',', '1', '6', ',', '4', ',', '3', ',', '1', '2']
 eth = 'Interface Ethernet'
 swi_acc = 'switchport access vlan'
+
+
 
 # get current vlan info from switch | create list of current vlans
 vlans_from_switch = switch.runCmds(1, ['enable', {'cmd': 'show vlan'}])[1]['vlans']
