@@ -40,10 +40,6 @@ metadata = [("username", 'admin'), ("password", 'admin')]
 
 host = grpc.insecure_channel('192.168.10.1:6042')
 stub = pyopenconfig.openconfig_pb2.OpenConfigStub(host)
-<<<<<<< HEAD
-path = '/Sysdb/interface/counter/eth/'
-
-
 
 
 test2 = get(stub, path, metadata)
@@ -54,10 +50,8 @@ munch.close()
 
 
 
-=======
 path = '/Smash/routing/status/'
 
 
->>>>>>> 4a92fb7a499f9bd6618cd4444e861a72b6bcbd27
 
 print(get(stub, path, metadata))
