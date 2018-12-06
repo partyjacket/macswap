@@ -1,6 +1,7 @@
-import cvp
+from mylib import cvp
 from pprint import pprint as pp
 from arista_nest_helper import myhelper
+import os
 
 
 host = '192.168.10.200'

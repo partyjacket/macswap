@@ -10,7 +10,7 @@ client = CvpClient()
 api = CvpApi(client)
 
 
-client.connect(['cvp.lab.local'], 'cvpadmin', 'pepper101')
+client.connect(['cvp.lab.local'], 'jpatterson', 'P3pp3r101!')
 
 
 result = client.get('/cvpInfo/getCvpInfo.do')

@@ -40,13 +40,10 @@ metadata = [("username", 'admin'), ("password", 'admin')]
 
 host = grpc.insecure_channel('192.168.10.1:6042')
 stub = pyopenconfig.openconfig_pb2.OpenConfigStub(host)
-
+path = '/Smash/arp/status/'
 
 test2 = get(stub, path, metadata)
 
-munch = open('new.txt', 'w')
-munch.write(test2)
-munch.close()
 
 
 
