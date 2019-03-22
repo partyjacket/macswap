@@ -3,7 +3,7 @@
 from jinja2 import Environment, FileSystemLoader
 
 #ENV = Environment(loader=FileSystemLoader("/media/sf_vboxshare/jinja_files"))
-ENV = Environment(loader=FileSystemLoader("/Users/jpatterson/Documents/#Arista/vboxshare/macswap/automation_book/basic_python-jinja/jinja_files"))
+ENV = Environment(loader=FileSystemLoader("/Users/jpatterson/Documents/vboxshare/macswap/automation_book/basic_python-jinja/jinja_files/"))
 
 template1 = ENV.get_template('template3.j2')
 
@@ -18,7 +18,7 @@ class NetworkInterface(object):
 
 interface_obj = NetworkInterface("Ethernet50", "This is my interface", "100")
 
-print template1.render(interface=interface_obj)
+print(template1.render(interface=interface_obj))
 
 
 
