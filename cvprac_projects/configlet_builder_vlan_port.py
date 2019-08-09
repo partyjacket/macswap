@@ -10,8 +10,8 @@ from join_numbers import join_ports
 # switch = Server(url)
 
 
-user = 'jpatterson'
-passwd = 'P3pp3r101!'
+user = 'admin'
+passwd = 'admin'
 ip = '192.168.10.1'
 url = "http://%s:%s@%s/command-api" % (user, passwd, ip)
 switch = Server(url)

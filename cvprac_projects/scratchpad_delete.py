@@ -27,8 +27,8 @@ from pprint import pprint as pp
 
 def lldp_neighbors(mac):
         ip = '192.168.10.1'
-        user = 'jpatterson'
-        passwd = 'P3pp3r101!'
+        user = 'admin'
+        passwd = 'admin'
         url = 'http://%s:%s@%s/command-api' % (user, passwd, ip)
         switch = Server(url)
         result = switch.runCmds(1, ['enable', 'show lldp neighbors'])[1]['lldpNeighbors'][:]

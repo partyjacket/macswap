@@ -1,7 +1,7 @@
 
 
 def format_ordinal():
-    number = (input('Please pick a number between 1 and 10: '))
+    number = (raw_input('Please pick a number between 1 and 10: '))
     while number.isdigit():
         if int(number) == 0:
             print("You cannot choose Zero, please pick a number betwixt 1 and 10!")
